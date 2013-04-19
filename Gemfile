@@ -10,6 +10,11 @@ group :development, :test do
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork', '1.2.0'
   gem 'spork', '0.9.2'
+  # gem 'ruby_gntp'
+  gem "growl", :git => "https://github.com/visionmedia/growl.git"
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
 end
 
 group :development do
@@ -28,10 +33,10 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-fchange', '0.0.5'
+  # gem 'rb-fchange', '0.0.5'
   gem 'rb-notifu', '0.0.4'
-  gem 'win32console', '1.3.0'
-  gem 'wdm', '~> 0.0.3'
+  # gem 'win32console', '1.3.0'
+  # gem 'wdm', '~> 0.0.3'
   gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
